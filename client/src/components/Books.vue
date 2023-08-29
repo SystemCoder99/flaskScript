@@ -1,4 +1,30 @@
 <template>
+  <!-- add new book modal -->
+  <div
+    ref="addBookModal"
+    class="modal fade"
+    :class="{ show: activeAddBookModal, 'd-block': activeAddBookModal }"
+    tabindex="-1"
+    role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add a new book</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+            @click="toggleAddBookModal">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-10">
